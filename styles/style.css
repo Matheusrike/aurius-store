@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif !important;
+}
+
+:root {
+	--text: #212125;
+	--background: #fdfcfd;
+	--primary: #fcc758;
+	--secondary: #acacac;
+	--accent: #fdb827;
+}
+
+/* Personalizando botões */
+.btn-primary {
+	background-color: var(--primary) !important;
+	border-color: var(--primary) !important;
+	color: var(--text) !important;
+}
+
+.btn-secondary {
+	background-color: var(--secondary) !important;
+	border-color: var(--secondary) !important;
+	color: var(--text) !important;
+}
+
+.btn-warning {
+	background-color: var(--accent) !important;
+	border-color: var(--accent) !important;
+	color: var(--text) !important;
+}
+
+/* Fundo e textos */
+body {
+	background-color: var(--background);
+	color: var(--text);
+}
