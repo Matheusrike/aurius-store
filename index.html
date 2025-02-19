@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-bs-theme="light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="shortcut icon"
-			href="./public/favicon.ico"
-			type="image/x-icon"
-		/>
-		<title>Aurius Store - Sua livraria de finanças</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="./styles/style.css" />
-	</head>
-	<body class="dark-mode">
-		<button class="btn btn-primary">Button</button>
-		<button class="btn btn-secondary">Button</button>
-		<button class="btn btn-accent">Button</button>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+	<title>Aurius Store - Sua livraria de finanças</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="./styles/home.css" />
+</head>
+
+<body>
+	<header class="border-bottom border-secondary pb-2 pb-lg-0">
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid d-flex align-items-center pb-lg-0 px-lg-5">
+						<a class="navbar-brand" href="#"><img src="./public/logo.svg" alt="Aurius Store"
+								class="logo"></a>
+						<button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+							<!-- Links de navegação -->
+							<ul class="navbar-nav d-lg-none me-auto my-3 my-lg-0">
+								<li class="nav-item dropdown">
+									<a class="nav-link active dropdown-toggle fw-bold py-0" href="#" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Categorias
+									</a>
+									<ul class="dropdown-menu border-0">
+										<li><a class="dropdown-item px-1" href="#Finanças">Finanças</a></li>
+										<li><a class="dropdown-item px-1" href="#Gestão">Gestão e Negócios</a></li>
+										<li><a class="dropdown-item px-1" href="#Mentalidade">Mentalidade Financeira</a>
+										</li>
+										<li><a class="dropdown-item px-1" href="#Economia">Economia</a></li>
+										<li><a class="dropdown-item px-1" href="#Historia">Histórias de Sucesso</a></li>
+										<li><a class="dropdown-item px-1" href="#Marketing">Marketing e Vendas</a></li>
+										<li><a class="dropdown-item px-1" href="#Psicologia">Psicologia do
+												Investidor</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<!-- Busca -->
+							<form class="d-flex w-100 w-lg-auto mx-lg-5 my-3 my-lg-0" role="search">
+								<input class="form-control me-1" type="search"
+									placeholder="Buscar em nosso acervo de livros" aria-label="Search">
+								<button class="btn btn-warning border-0" type="submit">
+									<i class="bi bi-search fs-5"></i>
+								</button>
+							</form>
+
+							<div class="options d-flex flex-column align-items-center gap-2 flex-lg-row">
+								<button
+									class="btn btn-warning w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
+									<i class="bi bi-person fs-5 d-none d-lg-block"></i>
+									<span class="d-lg-block d-lg-none">Minha Conta</span>
+								</button>
+								<button
+									class="btn btn-warning w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
+									<i class="bi bi-heart d-none fs-5 d-lg-block"></i>
+									<span class="d-lg-block d-lg-none">Meus Favoritos</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<nav class="row d-none d-lg-flex bg-dark">
+				<ul class="d-flex gap-3 align-items-center justify-content-around mb-0 py-2">
+					<li><a class="icon-link text-white text-decoration-none" href="#Financas">Finanças</a></li>
+					<li><a class="icon-link text-white text-decoration-none" href="#Gestão">Gestão e Negócios</a>
+					</li>
+					<li><a class="icon-link text-white text-decoration-none" href="#Mentalidade">Mentalidade
+							Financeira</a></li>
+					<li><a class="icon-link text-white text-decoration-none" href="#Economia">Economia</a></li>
+					<li>
+						<a class="icon-link text-white text-decoration-none" href="#Historia">Histórias de Sucesso</a>
+					</li>
+					<li>
+						<a class="icon-link text-white text-decoration-none" href="#Marketing">Marketing e Vendas</a>
+					</li>
+					<li>
+						<a class="icon-link text-white text-decoration-none" href="#Psicologia">Psicologia do
+							Investidor</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
