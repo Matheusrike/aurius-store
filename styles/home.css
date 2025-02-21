@@ -1,0 +1,38 @@
+.carousel-item img {
+	height: 250px !important;
+}
+
+.feature__card {
+	height: 200px !important;
+}
+
+.feature__card img {
+	height: 100px !important;
+}
+
+.feature__card p {
+	width: 200px !important;
+	text-align: center !important;
+}
+
+@media (min-width: 768px) {
+	.carousel-item img {
+		height: 400px !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel-item img {
+		height: 500px !important;
+		object-fit: fill;
+	}
+
+	.hero__title {
+		font-size: 3rem !important;
+	}
+
+	.lead {
+		font-size: 1.2rem !important;
+		line-height: 2rem !important;
+	}
+}

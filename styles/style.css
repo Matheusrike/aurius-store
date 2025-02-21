@@ -24,3 +24,8 @@ body {
 header .logo {
 	height: 30px;
 }
+
+.btn-transparent:hover,
+.btn-transparent:active {
+	color: var(--primary) !important;
+}

@@ -59,15 +59,15 @@
 							</form>
 
 							<div class="options d-flex flex-column align-items-center gap-2 flex-lg-row">
-								<button
-									class="btn btn-warning w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
-									<i class="bi bi-person fs-5 d-none d-lg-block"></i>
+								<button type="button"
+									class="btn btn-transparent w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
+									<i class="bi bi-person fs-3 lg-block"></i>
 									<span class="d-lg-block d-lg-none">Minha Conta</span>
 								</button>
 								<button
-									class="btn btn-warning w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
-									<i class="bi bi-heart d-none fs-5 d-lg-block"></i>
-									<span class="d-lg-block d-lg-none">Meus Favoritos</span>
+									class="btn btn-transparent w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
+									<i class="bi bi-cart3 fs-4 d-lg-block"></i>
+									<span class="d-lg-block d-lg-none">Carrinho</span>
 								</button>
 							</div>
 						</div>
@@ -96,6 +96,77 @@
 			</nav>
 		</div>
 	</header>
+
+	<main class="container-fluid">
+		<section id="hero" class="container col-xxl-8 px-4 py-5">
+			<div class="row flex-lg-row-reverse align-items-center justify-content-center g-5">
+				<div class="col-10 col-sm-8 col-lg-6">
+					<div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./public/images/undraw_book.svg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="./public/images/undraw_bookshelf.svg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="./public/images/undraw_reading.svg" class="d-block w-100" alt="...">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" col-lg-6">
+					<h1 class="hero__title display-5 fw-bold text-body-emphasis lh-12 mb-3 fs-2">
+						Seu Próximo Investimento Começa com um Livro
+					</h1>
+					<p class="lead fs-5 lh-6 text-justify mb-5">
+						Invista no que realmente importa, aumente seu conhecimento. Na Aurius Store, encontre os
+						melhores livros sobre finanças e investimentos para transformar leitura em lucro!
+					</p>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+						<a href="#books" type="button" class="btn btn-warning btn-lg px-4 me-md-2 fw-semibold">Nossos
+							Livros</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section id="features">
+			<div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center gap-5">
+				<div class="card feature__card">
+					<img src="./public/images/package-svgrepo.svg" class="card-img-top" alt="green iguana" />
+					<div class="card-body d-flex flex-column align-items-center	justify-content-center">
+						<p class="card-text">
+							Frete Rápido e Seguro
+						</p>
+					</div>
+				</div>
+				<div class="card feature__card">
+					<img src="./public/images/safe-payment-svgrepo.svg" class="card-img-top" alt="green iguana" />
+					<div class="card-body d-flex flex-column align-items-center	justify-content-center">
+						<p class="card-text fs-6">
+							Pagamentos Seguros
+						</p>
+					</div>
+				</div>
+				<div class="card feature__card">
+					<img src="./public/images/books-svgrepo.svg" class="card-img-top" alt="green iguana" />
+					<div class="card-body d-flex flex-column align-items-center	justify-content-center">
+						<p class="card-text fs-6">
+							Acervo Exclusivo
+						</p>
+					</div>
+				</div>
+				<div class="card feature__card">
+					<img src="./public/images/call-svgrepo.svg" class="card-img-top" alt="green iguana" />
+					<div class="card-body d-flex flex-column align-items-center justify-content-center">
+						<p class="card-text fs-6">
+							Atendimento Especializado
+						</p>
+					</div>
+				</div>
+		</section>
+	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
