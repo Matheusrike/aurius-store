@@ -33,6 +33,8 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-height: 3em;
+	min-height: calc(2 * 1.5em);
+	line-height: 1.5em;
 }
 
 /*Tablet*/
@@ -57,4 +59,10 @@
 	.feature__card {
 		transform: scale(1);
 	}
+
+	.product__card img {
+		min-height: 530px !important;
+		object-fit: cover;
+	}
+
 }
