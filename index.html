@@ -65,9 +65,14 @@
 									<span class="d-lg-block d-lg-none">Minha Conta</span>
 								</button>
 								<button
-									class="btn btn-transparent w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0">
+									class="btn btn-transparent w-100 me-lg-2 d-flex align-items-center justify-content-center gap-2 border-0 position-relative">
 									<i class="bi bi-cart3 fs-4 d-lg-block"></i>
 									<span class="d-lg-block d-lg-none">Carrinho</span>
+									<span id="cart__badge"
+										class="position-absolute translate-middle badge rounded-pill bg-danger cart__badge">
+										0
+									</span>
+
 								</button>
 							</div>
 						</div>
@@ -76,20 +81,27 @@
 			</div>
 			<nav class="row d-none d-lg-flex bg-dark">
 				<ul class="d-flex gap-3 align-items-center justify-content-around mb-0 py-2">
-					<li><a class="icon-link text-white text-decoration-none" href="#Financas">Finanças</a></li>
-					<li><a class="icon-link text-white text-decoration-none" href="#Gestão">Gestão e Negócios</a>
+					<li><a class="icon-link nav__category text-white text-decoration-none" href="#Financas">Finanças</a>
 					</li>
-					<li><a class="icon-link text-white text-decoration-none" href="#Mentalidade">Mentalidade
+					<li><a class="icon-link text-white nav__category text-decoration-none" href="#Gestão">Gestão e
+							Negócios</a>
+					</li>
+					<li><a class="icon-link text-white nav__category text-decoration-none"
+							href="#Mentalidade">Mentalidade
 							Financeira</a></li>
-					<li><a class="icon-link text-white text-decoration-none" href="#Economia">Economia</a></li>
-					<li>
-						<a class="icon-link text-white text-decoration-none" href="#Historia">Histórias de Sucesso</a>
+					<li><a class="icon-link text-white nav__category text-decoration-none" href="#Economia">Economia</a>
 					</li>
 					<li>
-						<a class="icon-link text-white text-decoration-none" href="#Marketing">Marketing e Vendas</a>
+						<a class="icon-link text-white nav__category text-decoration-none" href="#Historia">Histórias de
+							Sucesso</a>
 					</li>
 					<li>
-						<a class="icon-link text-white text-decoration-none" href="#Psicologia">Psicologia do
+						<a class="icon-link text-white nav__category text-decoration-none" href="#Marketing">Marketing e
+							Vendas</a>
+					</li>
+					<li>
+						<a class="icon-link text-white nav__category text-decoration-none" href="#Psicologia">Psicologia
+							do
 							Investidor</a>
 					</li>
 				</ul>
@@ -116,7 +128,7 @@
 					</div>
 				</div>
 				<div class=" col-lg-6">
-					<h1 class="hero__title display-5 fw-bold text-body-emphasis lh-12 mb-3 fs-2">
+					<h1 class="hero__title display-6 fw-bold text-body-emphasis lh-12 mb-3">
 						Seu Próximo Investimento Começa com um Livro
 					</h1>
 					<p class="lead fs-5 lh-6 text-justify mb-5">
@@ -130,42 +142,78 @@
 				</div>
 			</div>
 		</section>
-		<hr>
-		<section id="features">
-			<div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center gap-5">
-				<div class="card feature__card">
-					<img src="./public/images/package-svgrepo.svg" class="card-img-top" alt="green iguana" />
-					<div class="card-body d-flex flex-column align-items-center	justify-content-center">
-						<p class="card-text">
-							Frete Rápido e Seguro
-						</p>
+
+		<section id="features" class="container col-xxl-8 px-4 py-5">
+			<div class="container">
+				<div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+					<div class="col">
+						<div class="card feature__card p-2 p-lg-3 h-100">
+							<img src="./public/images/package-svgrepo.svg" class="card-img-top"
+								alt="Frete Rápido e Seguro" />
+							<div class="card-body d-flex flex-column align-items-center justify-content-center">
+								<p class="card-text text-center">Frete Rápido e Seguro</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card feature__card p-2 p-lg-3 h-100">
+							<img src="./public/images/safe-payment-svgrepo.svg" class="card-img-top"
+								alt="Pagamentos Seguros" />
+							<div class="card-body d-flex flex-column align-items-center justify-content-center">
+								<p class="card-text text-center">Pagamentos Seguros</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card feature__card p-2 p-lg-3 h-100">
+							<img src="./public/images/books-svgrepo.svg" class="card-img-top" alt="Acervo Exclusivo" />
+							<div class="card-body d-flex flex-column align-items-center justify-content-center">
+								<p class="card-text text-center">Acervo Exclusivo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card feature__card p-2 p-lg-3 h-100">
+							<img src="./public/images/call-svgrepo.svg" class="card-img-top"
+								alt="Atendimento Especializado" />
+							<div class="card-body d-flex flex-column align-items-center justify-content-center">
+								<p class="card-text text-center">Atendimento 24h</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="card feature__card">
-					<img src="./public/images/safe-payment-svgrepo.svg" class="card-img-top" alt="green iguana" />
-					<div class="card-body d-flex flex-column align-items-center	justify-content-center">
-						<p class="card-text fs-6">
-							Pagamentos Seguros
-						</p>
-					</div>
-				</div>
-				<div class="card feature__card">
-					<img src="./public/images/books-svgrepo.svg" class="card-img-top" alt="green iguana" />
-					<div class="card-body d-flex flex-column align-items-center	justify-content-center">
-						<p class="card-text fs-6">
-							Acervo Exclusivo
-						</p>
-					</div>
-				</div>
-				<div class="card feature__card">
-					<img src="./public/images/call-svgrepo.svg" class="card-img-top" alt="green iguana" />
-					<div class="card-body d-flex flex-column align-items-center justify-content-center">
-						<p class="card-text fs-6">
-							Atendimento Especializado
-						</p>
-					</div>
-				</div>
+			</div>
 		</section>
+		<section id="books"
+			class="container-fluid w-100 col-xxl-8 px-4 py-5 mx-0 d-flex flex-column justify-content-center align-items-center">
+			<h2 class="text-center display-6 fw-bold lh-1 mb-5">Nossos Livros</h2>
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-3 row-cols-xxl-4 g-4 justify-content-md-start">
+					<!-- Livro 1 -->
+					<div class="col mt-0">
+						<div class="card h-100 product__card">
+							<img class=" card-img-top" src="https://m.media-amazon.com/images/I/71XhGdYgoTL.jpg"
+								alt="Livro 1">
+							<div class="card-body d-flex flex-column align-items-center">
+								<h5 class="card-title mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Nesciunt distinctio, maxime veniam omnis dolorum placeat? Odit fugiat, doloribus
+									quae sequi perspiciatis dolor accusamus dolores maiores sed obcaecati, quibusdam
+									officiis voluptates.
+								</h5>
+								<span class="card-price fs-5 mb-4 fw-semibold">R$ 49,90</span>
+								<a href="#" class="btn btn-warning btn-flush w-100">
+									<i class="bi bi-cart-plus fs-5"></i>
+									<span class="fs-5">Comprar</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
 	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

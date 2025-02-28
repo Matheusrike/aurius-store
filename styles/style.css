@@ -25,7 +25,21 @@ header .logo {
 	height: 30px;
 }
 
+.nav__category {
+	transition: all 0.2s ease-in-out;
+}
+
+.nav__category:hover,
+.nav__category:active {
+	color: var(--primary) !important;
+}
+
 .btn-transparent:hover,
 .btn-transparent:active {
 	color: var(--primary) !important;
+}
+
+.cart__badge {
+	top: 10px !important;
+	right: -15px !important;
 }
